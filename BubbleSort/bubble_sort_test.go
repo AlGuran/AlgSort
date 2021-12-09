@@ -1,4 +1,4 @@
-package AlgSort
+package BubbleSort
 
 import (
 	"math/rand"
@@ -40,8 +40,8 @@ func TestBubbleSortInt(t *testing.T) {
 	})
 
 	t.Run("extremums", func(t *testing.T) {
-		expected := []int{-9223372036854775807, 9223372036854775807}
-		require.Equal(t, expected, BubbleSortInt([]int{9223372036854775807, -9223372036854775807}))
+		expected := []int{-9223372036854775808, 9223372036854775807}
+		require.Equal(t, expected, BubbleSortInt([]int{9223372036854775807, -9223372036854775808}))
 	})
 }
 

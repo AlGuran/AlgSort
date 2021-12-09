@@ -1,4 +1,4 @@
-package AlgSort
+package BubbleSort
 
 func BubbleSortInt(slice []int) []int {
 	swap := false
